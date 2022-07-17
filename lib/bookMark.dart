@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:project_1/Details.dart';
 import 'package:project_1/Network/Network_2.dart';
@@ -30,7 +28,6 @@ class _BookMarkState extends State<BookMark> {
   ];
   @override
   void initState() {
-    // TODO: implement initState
     movieData_2 = getList_2();
     super.initState();
   }
@@ -137,7 +134,17 @@ class _BookMarkState extends State<BookMark> {
                                     Padding(
                                       padding: const EdgeInsets.only(left: 24),
                                       child: GestureDetector(
-                                        onTap: () {},
+                                        onTap: () {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) => Details(
+                                                  id: snapshot
+                                                      .data!.results![index].id
+                                                      .toString()),
+                                            ),
+                                          );
+                                        },
                                         child: Container(
                                           height: 17.h,
                                           width: 17.h,

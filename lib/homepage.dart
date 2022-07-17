@@ -194,7 +194,7 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "TV Series",
+                              "Movies",
                               style: TextStyle(
                                   color: Colors.white54,
                                   fontSize: 20.sp,
