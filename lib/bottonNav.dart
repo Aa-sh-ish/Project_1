@@ -45,7 +45,7 @@ class _BottomNavState extends State<BottomNav> {
           ),
           SalomonBottomBarItem(
             icon: Icon(Icons.person_pin),
-            title: Text("Home"),
+            title: Text("Profile"),
             selectedColor: Colors.blue[200],
           ),
         ],
